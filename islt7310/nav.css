@@ -1,0 +1,8 @@
+li{
+    margin: 15px;
+    padding: 5px;
+    border: 10px;
+    border-color:black;
+    border-style: solid;
+    display: block;
+}
