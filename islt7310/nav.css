@@ -6,3 +6,16 @@ li{
     border-style: solid;
     display: block;
 }
+.menu{
+    position: relative;
+    display: inline-block;
+}
+.content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.content a{
+    display: block;
+}
+.menu:hover .content {display: block;}
