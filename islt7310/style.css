@@ -1,3 +1,24 @@
 h1 {
     color: #000099;
 }
+.rewriteP1::first-letter{
+    font-size: 150%;
+    color: #000099;
+}
+.rewriteP2::first-letter{
+    font-size: 150%;
+    color: #000099;
+}
+.rewriteP3::first-letter{
+    font-size: 150%;
+    color: #000099;
+}
+.rewriteP1{
+    
+}
+.rewriteP2{
+    text-indent: 5cm;
+}
+.rewriteP3{
+    text-indent: 5cm;
+}
