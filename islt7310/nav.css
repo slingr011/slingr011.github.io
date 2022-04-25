@@ -19,4 +19,9 @@ li{
 .content a{
     display: block;
 }
-.menu:hover .content {display: block;}
+.menu:hover .content {
+    display: block;
+}
+.content:hover {
+    display: block;
+}
