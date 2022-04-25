@@ -25,3 +25,6 @@ li{
 .content:hover {
     display: block;
 }
+.content a:hover{
+    display: block;
+}
