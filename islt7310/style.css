@@ -5,15 +5,8 @@ h1 {
     font-size: 150%;
     color: #000099;
 }
-.RewriteP2::first-letter{
-    font-size: 150%;
-    color: #000099;
-}
-.RewriteP3::first-letter{
-    font-size: 150%;
-    color: #000099;
-}
 .Rewrite{
+    text-align: center;
     width: auto;
     padding: 25px;
     margin: auto;
@@ -26,4 +19,16 @@ h1 {
 }
 .RewriteP3{
     text-indent: 25px;
+}
+.about{
+    text-align: center;
+    width: auto;
+    padding: 25px;
+    margin: auto;
+}
+.index{
+    text-align: center;
+    width: auto;
+    padding: 25px;
+    margin: auto;
 }
