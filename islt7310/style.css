@@ -139,3 +139,9 @@ h1 {
     }
     
 }
+footer{
+    background-image: url("images/Auriel.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
