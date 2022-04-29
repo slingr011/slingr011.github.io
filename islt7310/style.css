@@ -6,29 +6,132 @@ h1 {
     color: #000099;
 }
 .Rewrite{
-    text-align: center;
-    width: auto;
-    padding: 25px;
-    margin: auto;
+    display: grid;
+}
+.header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 .RewriteP1{
-    
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .RewriteP2{
     text-indent: 25px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
 .RewriteP3{
     text-indent: 25px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
-.about{
+.RewriteP4{
+    text-indent: 25px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.name{
     text-align: center;
-    width: auto;
-    padding: 25px;
-    margin: auto;
+}
+.home{
+    display: grid;
+}
+.opening{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.purpose{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
 .index{
-    text-align: center;
-    width: auto;
-    padding: 25px;
-    margin: auto;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.about{
+    display: grid;
+}
+.me{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+.overview{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    
+}
+.quote{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+.my-picture{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    height: auto;
+
+}
+.my-video{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+@media print{
+    .name{
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .me{
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        width: 350px;
+    }
+    .overview{
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        width: 350px;
+    }
+    .quote{
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        width: 150px;
+    }
+    .footer{
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    @page{
+        margin: 1in;
+    }
+    
 }
