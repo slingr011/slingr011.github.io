@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Tapestry;
+    src: url(Tapestry-Regular.ttf);
+}
 h1 {
     color: #000099;
 }
@@ -87,7 +91,7 @@ h1 {
     grid-row-end: 2;
     grid-column-start: 3;
     grid-column-end: 4;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Tapestry, sans-serif;
     
     
 }
