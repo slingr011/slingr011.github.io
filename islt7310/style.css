@@ -145,3 +145,9 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.email:hover{
+    transform: scale(1.5);
+}
+.phone:hover{
+    transform: scale(1.5)
+}
