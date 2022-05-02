@@ -4,6 +4,7 @@ li{
 }
 .grid-container{
     display: grid;
+    padding-bottom: 75px;
 }
 .nav1{
     grid-column-start: 1;

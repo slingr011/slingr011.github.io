@@ -223,24 +223,24 @@ footer{
 .project3{
     display:grid;
     grid-template-columns: 350px 150px auto auto auto;
-    grid-template-rows: 75px auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 .p3head{
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     grid-column-start: 3;
     grid-column-end: 4;
     
 }
 .p3text{
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
 }
 .p3pic{
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 4;
     grid-column-end: 5;
     max-height: 500px;
