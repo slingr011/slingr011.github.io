@@ -1,7 +1,5 @@
 li{
     
-    border-color:black;
-    border-style: solid;
     display: inline-block;
 }
 .grid-container{
@@ -28,21 +26,27 @@ li{
     display: inline-block;
     grid-column-start: 5;
     grid-column-end: 6;
+    padding-bottom: 25px;
 }
 .content{
     display: none;
     position: absolute;
     z-index: 1;
+    padding: 10px;
 }
 .content a{
     display: block;
+    padding: 10px;
 }
 .menu:hover .content {
     display: block;
+    padding: 10px;
 }
 .content:hover {
     display: block;
+    padding: 10px;
 }
 .content a:hover{
     display: block;
+    padding: 10px;
 }
