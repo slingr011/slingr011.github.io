@@ -329,6 +329,23 @@ footer{
         grid-template-columns: auto auto auto auto auto;
         grid-template-rows: auto auto auto;
     }
+    .Rewrite{
+        display: grid;
+    }
+    .home{
+        display: grid;
+        
+    }
+    .quote{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        font-family: Tapestry, sans-serif;
+        
+        
+    }
+
 }
 .contact{
     width: 100%
