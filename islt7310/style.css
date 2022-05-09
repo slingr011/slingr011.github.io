@@ -11,6 +11,7 @@ h1 {
 }
 .Rewrite{
     display: grid;
+    font-size: x-large;
 }
 .header{
     grid-row-start: 1;
@@ -50,6 +51,7 @@ h1 {
 }
 .home{
     display: grid;
+    font-size: x-large;
 }
 .opening{
     grid-row-start: 2;
@@ -71,6 +73,8 @@ h1 {
 }
 .about{
     display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
 }
 .me{
     grid-row-start: 2;
@@ -89,10 +93,42 @@ h1 {
 .quote{
     grid-row-start: 1;
     grid-row-end: 2;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 4;
     font-family: Tapestry, sans-serif;
+    font-size: xx-large;
     
+}
+@media screen and (max-width: 767px) {
+    .responsive{
+        width:100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid black;
+    }
+}
+.data{
+    border-collapse: collapse;
+    border: 5px solid black;
+}
+.responsive table th{
+    text-align: left;
+    padding: 4px 30px 4px 8px;
+    color: antiquewhite;
+    background-color: blueviolet;
+}
+.responsive table td{
+    border: 1px solid black;
+    padding: 4px 8px;
+}
+.responsive table tr:nth-child(odd) td{
+    background-color: blanchedalmond;
+}
+.responsive{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
     
 }
 .my-picture{
@@ -168,6 +204,7 @@ footer{
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
+    font-size: x-large;
 }
 .p1pic{
     grid-row-start: 2;
@@ -181,7 +218,7 @@ footer{
 .project2{
     display:grid;
     grid-template-columns: 600px auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
 }
 .p2head{
     grid-row-start: 1;
@@ -193,27 +230,28 @@ footer{
 }
 .p2text{
     grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
     padding-right: 50px;
+    font-size: x-large;
     
 }
 .p2pic{
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
     max-height: 500px;
     max-width: 500px;
     width: 100%;
     height: auto;
 }
 .p2pic2{
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
     max-height: 500px;
     max-width: 500px;
     width: 100%;
@@ -221,37 +259,75 @@ footer{
     padding-left: 50px;
 }
 .project3{
-    display:grid;
-    grid-template-columns: 350px 150px auto auto auto;
-    grid-template-rows: auto auto auto;
+    display: grid;
+    grid-template-columns:  400px auto auto auto 400px;
+    grid-template-rows: auto auto auto auto;
 }
 .p3head{
     grid-row-start: 1;
     grid-row-end: 2;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 4;
+    text-align: center;
+    
     
 }
 .p3text{
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: x-large;
 }
 .p3pic{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    max-height: 500px;
-    max-width: 500px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    align-content: center;
     
     width: 100%;
     height: auto;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 900px){
     .contact{
         width: 100%;
+    }
+    .project2{
+        display:grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    .p2text{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        
+    }
+    .p2pic{
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 5px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .p2pic2{
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        padding: 5px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .project3{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto;
     }
 }
 .contact{
