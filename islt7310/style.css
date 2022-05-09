@@ -97,15 +97,6 @@ h1 {
     grid-column-end: 4;
     font-family: Tapestry, sans-serif;
     font-size: xx-large;
-    
-}
-@media screen and (max-width: 767px) {
-    .responsive{
-        width:100%;
-        overflow-y: hidden;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        border: 1px solid black;
-    }
 }
 .data{
     border-collapse: collapse;
@@ -129,7 +120,6 @@ h1 {
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
-    
 }
 .my-picture{
     grid-row-start: 3;
@@ -344,6 +334,55 @@ footer{
         font-family: Tapestry, sans-serif;
         
         
+    }
+    .purpose{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .overview{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        
+    }
+    .about{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    .responsive{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width:100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid black;
+    }
+    .overview{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        
+    }
+    .RewriteP2{
+        text-indent: 25px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .RewriteP4{
+        text-indent: 25px;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
     }
 
 }
