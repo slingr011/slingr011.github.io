@@ -331,9 +331,7 @@ footer{
         grid-row-end: 2;
         grid-column-start: 2;
         grid-column-end: 4;
-        font-family: Tapestry, sans-serif;
-        
-        
+        font-family: Tapestry, sans-serif; 
     }
     .purpose{
         grid-row-start: 2;
@@ -375,6 +373,9 @@ footer{
         grid-row-end: 4;
         grid-column-start: 3;
         grid-column-end: 4;
+        width: 100%;
+        height: auto;
+
     }
     .RewriteP2{
         text-indent: 25px;
