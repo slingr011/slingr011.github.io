@@ -14,43 +14,46 @@ h1 {
     font-size: x-large;
 }
 .header{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    text-align: center;
+    font-size: xx-large;
 }
 .RewriteP1{
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
+    border: 5px solid black;
 }
 .RewriteP2{
-    text-indent: 25px;
+    
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 4;
+    grid-column-start: 3;
     grid-column-end: 5;
+    border: 5px solid black;
 }
 .RewriteP3{
-    text-indent: 25px;
+    
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
+    border: 5px solid black;
 }
 .RewriteP4{
-    text-indent: 25px;
+    
     grid-row-start: 3;
     grid-row-end: 4;
-    grid-column-start: 4;
+    grid-column-start: 3;
     grid-column-end: 5;
+    border: 5px solid black;
 }
 .name{
     text-align: center;
 }
 .home{
     display: grid;
+    grid-template-columns: auto auto auto;
     font-size: x-large;
 }
 .opening{
@@ -58,83 +61,58 @@ h1 {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
+    border: 5px solid black;
 }
 .purpose{
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 5px solid black;
 }
 .index{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    text-align: center;
 }
 .about{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 425px 500px auto auto;
     grid-template-rows: auto auto auto auto;
 }
 .me{
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 5px solid black;
     
 }
 .overview{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    
-}
-.quote{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    font-family: Tapestry, sans-serif;
-    font-size: xx-large;
-}
-.data{
-    border-collapse: collapse;
-    border: 5px solid black;
-}
-.responsive table th{
-    text-align: left;
-    padding: 4px 30px 4px 8px;
-    color: antiquewhite;
-    background-color: blueviolet;
-}
-.responsive table td{
-    border: 1px solid black;
-    padding: 4px 8px;
-}
-.responsive table tr:nth-child(odd) td{
-    background-color: blanchedalmond;
-}
-.responsive{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.my-picture{
     grid-row-start: 3;
     grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 100%;
-    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 5px solid black;
+}
+.quote{
+    text-align: center;
+    font-family: Tapestry, sans-serif;
+    font-size: x-large;
+}
+.my-picture{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    max-width: 500px;
+    max-height: 500px;
 
 }
 .my-video{
     grid-row-start: 3;
     grid-row-end: 4;
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    max-width: 500px;
 }
 @media print{
     .name{
@@ -195,6 +173,7 @@ footer{
     grid-column-start: 1;
     grid-column-end: 2;
     font-size: x-large;
+    border: 5px solid black;
 }
 .p1pic{
     grid-row-start: 2;
@@ -225,6 +204,7 @@ footer{
     grid-column-end: 3;
     padding-right: 50px;
     font-size: x-large;
+    border: 5px solid black;
     
 }
 .p2pic{
@@ -372,15 +352,13 @@ footer{
         grid-template-columns: auto auto auto auto auto;
         grid-template-rows: auto auto auto auto auto;
     }
-    .responsive{
-        grid-row-start: 4;
-        grid-row-end: 5;
+    .me{
+        grid-row-start: 2;
+        grid-row-end: 3;
         grid-column-start: 1;
-        grid-column-end: 4;
-        width:100%;
-        overflow-y: hidden;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        border: 1px solid black;
+        grid-column-end: 2;
+        border: 5px solid black;
+        
     }
     .overview{
         grid-row-start: 2;
@@ -388,6 +366,15 @@ footer{
         grid-column-start: 3;
         grid-column-end: 4;
         
+    }
+    .my-picture{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 100%;
+        height: auto;
+    
     }
     .my-video{
         grid-row-start: 3;
