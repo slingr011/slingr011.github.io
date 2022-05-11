@@ -73,6 +73,9 @@ h1 {
 .index{
     text-align: center;
 }
+.script{
+    text-align: left;
+}
 .about{
     display: grid;
     grid-template-columns: 425px 500px auto auto;
